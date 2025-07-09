@@ -1,0 +1,69 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: #3d5a80;
+}
+.header {
+  height: 10vh;
+  width: 100vw;
+  background-color: #14213d;
+  color: #fff;
+  text-align: center;
+  line-height: 10vh;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.iamges {
+  margin-top: 40px;
+  gap: 35px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 5px rgba(252, 163, 17, 0.8);
+}
+
+.display {
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+.score-card {
+  height: 100px;
+  width: 360px;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 180px);
+  grid-template-rows: repeat(2, 80px);
+}
+#myscore {
+  grid-area: 1/1/2/2;
+}
+#compscore {
+  grid-area: 1/2/2/3;
+}
+#message {
+  grid-area: 2/1/3/3;
+  background-color: #fca311;
+  border-radius: 10px;
+  line-height: 80px;
+  overflow: hidden;
+}
