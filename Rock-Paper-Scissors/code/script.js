@@ -80,7 +80,7 @@ function updateLost(updateval) {
 
 }
 function updateDraw(updateval) {
-    message.innerHTML = `DRAW,COMPUTER CHOOSE,${updateval.toUpperCase()}`;
+    message.innerHTML = `DRAW COMPUTER CHOOSE,${updateval.toUpperCase()}`;
     message.style.backgroundColor = "#aeb8fe";
 
 }
